@@ -17,4 +17,8 @@ def create_app(config_name):
 
     # 初始化session 和程序实例进行关联
     Session(app)
+    #注册蓝图
+    from info.modules.index import index_blue
+    app.register_blueprint(index_blue)
+
     return app

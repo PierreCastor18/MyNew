@@ -17,11 +17,7 @@ Migrate(app,db)
 
 #使用迁移框架
 manage.add_command("db",MigrateCommand)
-@app.route("/")
-def index():
 
-    session["name"] = '2018'
-    return "index"
 
 if __name__ == "__main__":
     # app.run()
